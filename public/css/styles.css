@@ -604,6 +604,9 @@
   .table {
     display: table;
   }
+  .w-125 {
+    width: calc(var(--spacing) * 125);
+  }
   .border-collapse {
     border-collapse: collapse;
   }
