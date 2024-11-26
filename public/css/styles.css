@@ -909,6 +909,9 @@
   .text-slate-800 {
     color: var(--color-slate-800);
   }
+  .text-teal-600 {
+    color: var(--color-teal-600);
+  }
   .text-white {
     color: var(--color-white);
   }
