@@ -562,6 +562,15 @@
   .visible {
     visibility: visible;
   }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
+  .col-start-3 {
+    grid-column-start: 3;
+  }
+  .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -630,6 +639,12 @@
   .rotate-90 {
     rotate: 90deg;
   }
+  .grid-flow-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .content-center {
     align-content: center;
   }
@@ -647,6 +662,9 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
