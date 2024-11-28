@@ -1007,9 +1007,9 @@
   .shadow-sky-200 {
     --tw-shadow-color: var(--color-sky-200);
   }
-  .sm\:max-w-60 {
+  .sm\:w-60 {
     @media (width >= 40rem) {
-      max-width: calc(var(--spacing) * 60);
+      width: calc(var(--spacing) * 60);
     }
   }
   .sm\:grid-cols-2 {
@@ -1020,11 +1020,6 @@
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
-    }
-  }
-  .sm\:items-stretch {
-    @media (width >= 40rem) {
-      align-items: stretch;
     }
   }
   .sm\:gap-0 {
@@ -1042,11 +1037,6 @@
     @media (width >= 40rem) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-    }
-  }
-  .sm\:object-cover {
-    @media (width >= 40rem) {
-      object-fit: cover;
     }
   }
   .sm\:p-0 {
