@@ -1074,39 +1074,10 @@
       }
     }
   }
-  .first\:rounded-t-2xl {
-    &:first-child {
-      border-top-left-radius: var(--radius-2xl);
-      border-top-right-radius: var(--radius-2xl);
-    }
-  }
-  .last\:rounded-b-2xl {
-    &:last-child {
-      border-bottom-right-radius: var(--radius-2xl);
-      border-bottom-left-radius: var(--radius-2xl);
-    }
-  }
-  .even\:flex-row-reverse {
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-  }
-  .even\:text-right {
-    &:nth-child(even) {
-      text-align: right;
-    }
-  }
   .hover\:cursor-pointer {
     &:hover {
       @media (hover: hover) {
         cursor: pointer;
-      }
-    }
-  }
-  .hover\:bg-indigo-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-indigo-500);
       }
     }
   }
@@ -1166,11 +1137,6 @@
   .active\:bg-purple-700 {
     &:active {
       background-color: var(--color-purple-700);
-    }
-  }
-  .in-focus\:block {
-    :where(*:focus) & {
-      display: block;
     }
   }
   .sm\:w-60 {
