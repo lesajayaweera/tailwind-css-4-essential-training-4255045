@@ -619,6 +619,9 @@
   .-mt-12 {
     margin-top: calc(var(--spacing) * -12);
   }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -627,6 +630,9 @@
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -661,11 +667,17 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-120 {
     height: calc(var(--spacing) * 120);
   }
   .max-h-18 {
     max-height: calc(var(--spacing) * 18);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-75 {
     width: calc(var(--spacing) * 75);
@@ -688,8 +700,17 @@
   .max-w-100 {
     max-width: calc(var(--spacing) * 100);
   }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
   .rotate-90 {
     rotate: 90deg;
+  }
+  .list-inside {
+    list-style-position: inside;
   }
   .grid-flow-row-dense {
     grid-auto-flow: row dense;
@@ -705,6 +726,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .content-center {
     align-content: center;
@@ -724,6 +748,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -737,6 +764,12 @@
     :where(& > :not(:last-child)) {
       margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-x-1 {
@@ -781,9 +814,16 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
   .border-l-4 {
     border-left-style: var(--tw-border-style);
     border-left-width: 4px;
+  }
+  .border-indigo-100 {
+    border-color: var(--color-indigo-100);
   }
   .border-indigo-300 {
     border-color: var(--color-indigo-300);
@@ -1020,10 +1060,60 @@
   .shadow-sky-200 {
     --tw-shadow-color: var(--color-sky-200);
   }
+  .group-hover\:text-indigo-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-indigo-100);
+      }
+    }
+  }
+  .group-hover\:text-white {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .first\:rounded-t-2xl {
+    &:first-child {
+      border-top-left-radius: var(--radius-2xl);
+      border-top-right-radius: var(--radius-2xl);
+    }
+  }
+  .last\:rounded-b-2xl {
+    &:last-child {
+      border-bottom-right-radius: var(--radius-2xl);
+      border-bottom-left-radius: var(--radius-2xl);
+    }
+  }
+  .even\:flex-row-reverse {
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  .even\:text-right {
+    &:nth-child(even) {
+      text-align: right;
+    }
+  }
   .hover\:cursor-pointer {
     &:hover {
       @media (hover: hover) {
         cursor: pointer;
+      }
+    }
+  }
+  .hover\:bg-indigo-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-indigo-500);
+      }
+    }
+  }
+  .hover\:bg-indigo-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-indigo-600);
       }
     }
   }
@@ -1052,6 +1142,11 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
+  .focus\:ring-indigo-300 {
+    &:focus {
+      --tw-ring-color: var(--color-indigo-300);
+    }
+  }
   .focus\:ring-purple-300 {
     &:focus {
       --tw-ring-color: var(--color-purple-300);
@@ -1071,6 +1166,11 @@
   .active\:bg-purple-700 {
     &:active {
       background-color: var(--color-purple-700);
+    }
+  }
+  .in-focus\:block {
+    :where(*:focus) & {
+      display: block;
     }
   }
   .sm\:w-60 {
