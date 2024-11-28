@@ -1116,6 +1116,14 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .group-hover\:translate-x-1 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-translate-x: calc(var(--spacing) * 1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
   .group-hover\:text-indigo-100 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1128,6 +1136,12 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .group-focus\:translate-x-1 {
+    &:is(:where(.group):focus *) {
+      --tw-translate-x: calc(var(--spacing) * 1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .marker\:text-sm {
@@ -1540,10 +1554,10 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-content: "";
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-content: "";
     }
   }
 }
@@ -1656,11 +1670,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-content {
-  syntax: "*";
-  initial-value: "";
-  inherits: false;
-}
 @property --tw-translate-x {
   syntax: "<length> | <percentage>";
   inherits: false;
@@ -1675,4 +1684,9 @@
   syntax: "<length>";
   inherits: false;
   initial-value: 0;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
 }
