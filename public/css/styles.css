@@ -712,6 +712,9 @@
   .list-inside {
     list-style-position: inside;
   }
+  .list-decimal {
+    list-style-type: decimal;
+  }
   .grid-flow-row-dense {
     grid-auto-flow: row dense;
   }
@@ -747,9 +750,6 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -1059,21 +1059,6 @@
   }
   .shadow-sky-200 {
     --tw-shadow-color: var(--color-sky-200);
-  }
-  .\*\:bg-amber-100 {
-    :is(& > *) {
-      background-color: var(--color-amber-100);
-    }
-  }
-  .\*\:px-2 {
-    :is(& > *) {
-      padding-inline: calc(var(--spacing) * 2);
-    }
-  }
-  .\*\:py-1 {
-    :is(& > *) {
-      padding-block: calc(var(--spacing) * 1);
-    }
   }
   .group-hover\:text-indigo-100 {
     &:is(:where(.group):hover *) {
