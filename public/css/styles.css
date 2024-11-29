@@ -709,6 +709,9 @@
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
   .max-w-5xl {
     max-width: var(--container-5xl);
   }
@@ -824,6 +827,9 @@
   .self-end {
     align-self: flex-end;
   }
+  .self-start {
+    align-self: flex-start;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -921,6 +927,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-yellow-600 {
+    background-color: var(--color-yellow-600);
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -978,6 +987,14 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -1017,6 +1034,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
   }
   .text-blue-500 {
     color: var(--color-blue-500);
@@ -1069,11 +1090,17 @@
   .text-slate-900 {
     color: var(--color-slate-900);
   }
+  .text-stone-700 {
+    color: var(--color-stone-700);
+  }
   .text-teal-600 {
     color: var(--color-teal-600);
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-yellow-600 {
+    color: var(--color-yellow-600);
   }
   .underline {
     text-decoration-line: underline;
@@ -1542,6 +1569,7 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-inset-shadow: 0 0 #0000;
@@ -1612,6 +1640,10 @@
   inherits: false;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
