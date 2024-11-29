@@ -703,9 +703,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-30 {
-    max-width: calc(var(--spacing) * 30);
-  }
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
@@ -714,6 +711,9 @@
   }
   .max-w-5xl {
     max-width: var(--container-5xl);
+  }
+  .max-w-30 {
+    max-width: calc(var(--spacing) * 30);
   }
   .max-w-100 {
     max-width: calc(var(--spacing) * 100);
@@ -927,9 +927,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-yellow-600 {
-    background-color: var(--color-yellow-600);
-  }
   .object-cover {
     object-fit: cover;
   }
@@ -1098,9 +1095,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .text-yellow-600 {
-    color: var(--color-yellow-600);
   }
   .underline {
     text-decoration-line: underline;
