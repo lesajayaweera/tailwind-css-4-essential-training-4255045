@@ -717,14 +717,14 @@
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
-  .max-w-5xl {
-    max-width: var(--container-5xl);
-  }
   .max-w-30 {
     max-width: calc(var(--spacing) * 30);
   }
   .max-w-3xl {
     max-width: var(--container-3xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
   }
   .max-w-100 {
     max-width: calc(var(--spacing) * 100);
@@ -843,11 +843,6 @@
   }
   .self-start {
     align-self: flex-start;
-  }
-  .card {
-    padding: 2rem;
-    border: solid 1px var(--color-stone-300);
-    border-radius: var(--radius-2xl);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
