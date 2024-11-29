@@ -22,3 +22,7 @@
   border: solid 1px var(--color-stone-300);
   border-radius: var(--radius-2xl);
 }
+
+.btn-chocolate {
+  @apply px-5 py-3 md:px-7 md:py-4 bg-chocolate hover:bg-chocolate-dark text-white rounded-xl font-medium tracking-wide;
+}

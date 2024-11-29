@@ -908,9 +908,6 @@
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
-  .bg-chocolate {
-    background-color: var(--color-chocolate);
-  }
   .bg-emerald-700 {
     background-color: var(--color-emerald-700);
   }
@@ -1053,10 +1050,6 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
-  }
-  .tracking-wide {
-    --tw-tracking: var(--tracking-wide);
-    letter-spacing: var(--tracking-wide);
   }
   .text-blue-500 {
     color: var(--color-blue-500);
@@ -1591,6 +1584,28 @@
     }
   }
 }
+.btn-chocolate {
+  border-radius: var(--radius-xl);
+  background-color: var(--color-chocolate);
+  padding-inline: calc(var(--spacing) * 5);
+  padding-block: calc(var(--spacing) * 3);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  --tw-tracking: var(--tracking-wide);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-white);
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-chocolate-dark);
+    }
+  }
+  @media (width >= 48rem) {
+    padding-inline: calc(var(--spacing) * 7);
+  }
+  @media (width >= 48rem) {
+    padding-block: calc(var(--spacing) * 4);
+  }
+}
 @supports (-moz-orient: inline) {
   @layer base {
     *, ::before, ::after, ::backdrop {
@@ -1600,7 +1615,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-inset-shadow: 0 0 #0000;
@@ -1617,6 +1631,7 @@
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-content: "";
+      --tw-tracking: initial;
     }
   }
 }
@@ -1671,10 +1686,6 @@
   inherits: false;
 }
 @property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
@@ -1751,5 +1762,9 @@
 @property --tw-content {
   syntax: "*";
   initial-value: "";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
   inherits: false;
 }
