@@ -16,7 +16,6 @@
 			"settings": {},
 			"extensions": [
 				"GitHub.github-vscode-theme",
-        "bmewburn.vscode-intelephense-client",
         "mrmlnc.vscode-apache",
         "ritwickdey.LiveServer",
         "bradlc.vscode-tailwindcss"
